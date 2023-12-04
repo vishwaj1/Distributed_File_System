@@ -1,0 +1,16 @@
+create database distributed;
+use distributed;
+
+create table register(username varchar(30) primary key,
+password varchar(30),
+contact varchar(100));
+
+
+create table access(owner varchar(30),
+user varchar(30),
+filename varchar(200) ,
+access_mode varchar(30),
+ primary key(access_mode,filename));
+
+create table all_files(owner varchar(30.
+filename varchar(200)));
